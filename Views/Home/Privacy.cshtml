@@ -1,6 +1,30 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
-}
-<h1>@ViewData["Title"]</h1>
+﻿<div class="form">
+    <h3 class="lab">Regsiter</h3>
+    <hr class="lab" />
 
-<p>Use this page to detail your site's privacy policy.</p>
+    <label class="lab">First Name :</label>
+    <label id="LLName" class="lab">Last Name :</label>
+    <br />
+    <input id="FName" type="text" name="FirstName" placeholder="Enter Your First Name" onmouseover="FN()" />
+    <input id="LName" type="text" name="LastName" placeholder="Enter Your Last Name" onmouseover="LN()" />
+
+    <label class="lab">Email :</label>
+    <input type="email" name="Email" placeholder="Enter Your Email Address" onmouseover="EA()" />
+    <label class="lab">Password :</label>
+    <input type="password" name="Password" placeholder="Enter Your Password" onmouseover="PW()" />
+    <label class="lab">City :</label>
+    <input type="text" name="City" placeholder="Enter Your City" onmouseover="CY()" />
+    <label class="lab">Gender :</label>
+    <select name="Gender" onmouseover="GR()">
+        <option>-- Select your gender --</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Rather not say</option>
+    </select>
+    <label id="LCH" class="lab" onmouseover="SD()">Study level :</label>
+    <input type="checkbox" onmouseover="BA()" /><label id="CH1" class="lab">BA</label>
+    <input type="checkbox" onmouseover="MA()"/><label id="CH2" class="lab">Master</label>
+    <input type="checkbox" onmouseover="PhD()"/><label id="CH3" class="lab">PhD</label>
+    <button onclick="color()">Save</button>
+</div>
+
